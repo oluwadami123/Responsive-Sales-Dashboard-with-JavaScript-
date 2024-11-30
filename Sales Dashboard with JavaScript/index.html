@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Material Icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+          Sales Dashboard
+        </div>
+        <div class="header-left">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#">
+                <span class="material-icons-outlined" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" id="active">dashboard</span>DASHBOARD
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#">
+                <span class="material-icons-outlined" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">inventory_2</span> PRODUCTS
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#">
+                <span class="material-icons-outlined" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900">poll</span> REPORTS
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#">
+                <span class="material-icons-outlined" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">settings</span> SETTINGS
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="header-right">
+          <span class="material-icons-outlined" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">notifications</span>
+          <span class="material-icons-outlined" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">email</span>
+          <span class="material-icons-outlined" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+   
+      <!-- Main -->
+  <main class="main-container">
+    <div class="main-cards">
+      <div class="card">
+        <div class="card-inner" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+          <p>PRODUCTS</p>
+          <div class="icon icon-shape background-blue text-primary">
+            <span class="material-icons-outlined" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">inventory_2</span>
+          </div>
+        </div>
+        <span class="text-primary" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">249</span>
+      </div>
+      <div class="card">
+        <div class="card-inner"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+          <p>ORDERS</p>
+          <div class="icon icon-shape background-orange text-primary">
+            <span class="material-icons-outlined"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">add_shopping_cart</span>
+          </div>
+        </div>
+        <span class="text-primary"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">83</span>
+      </div>
+      <div class="card">
+        <div class="card-inner" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <p>SALES</p>
+          <div class="icon icon-shape background-green text-primary">
+            <span class="material-icons-outlined"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">shopping_cart</span>
+          </div>
+        </div>
+        <span class="text-primary" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">79</span>
+      </div>
+      <div class="card">
+        <div class="card-inner" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+          <p>ALERTS</p>
+          <div class="icon icon-shape background-red text-primary">
+            <span class="material-icons-outlined" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">notification_important</span>
+          </div>
+        </div>
+        <span class="text-primary" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">56</span>
+      </div>
+    </div>
+
+  <div class="charts">
+
+          <div class="charts-card">
+            <p class="chart-title">Revenue vs Profit</p>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <p class="chart-title">Top 5 Products</p>
+            <div id="bar-chart2"></div>
+          </div>
+          <div class="charts-card">
+            <p class="chart-title">Top 5 Countries with the highest Sales</p>
+            <div id="bar-chart3"></div>
+          </div>
+          <div class="charts-card">
+            <p class="chart-title">Purchase vs Sales Orders</p>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+    </div>
+  <!--Apex Charts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.1.0/apexcharts.min.js"> </script>
+  <!-- Animation-->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:1});
+  </script>
+  <!-- Custom Js-->
+   <script src="Js/scripts.js"></script>
+</body>
+</html>
